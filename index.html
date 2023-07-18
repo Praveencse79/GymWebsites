@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VickyShakti</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link rel="stylesheet" href="CSS/Style.css">
+<style>
+    /*CSS Reset*/
+     .bg{
+      
+        background-image: url("img/bg10.jpg");
+        /* background-color: slategray; */
+        /* background: rgb(223, 230, 233); */
+    } 
+    .nameInput{
+        padding-right: 65px;
+    }
+    .emailInput{
+        padding-right: 68px;
+    }
+    .sbmtbtn{
+        margin-left: 450px;
+    }
+   
+     body{
+        font-family: 'Josefin Sans', sans-serif;
+        /* font-family: 'Ubuntu Mono', monospace; */
+        /* font-family: 'Balsamiq Sans', cursive; */
+
+       color: white;
+        margin: 12px;
+        padding-top:  20px;
+        padding-left: 25px;
+        padding-bottom: 40px;
+        padding-right: 30px;
+         background-image: url("img/3.jpg"),
+       
+    } 
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 32px;
+        top: 20px;
+        border: 1.5px solid pink;
+        text-align: center;
+    }
+    .left img{
+          width: 100px;
+          filter: invert(0%);
+         
+
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        border: 1.5px solid pink;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 1.5px solid pink;
+    }
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+       
+    }
+
+    .navbar li a{
+        color: white;
+        text-decoration: none; 
+        padding: 34px 22px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: aquamarine;
+    }
+    .btn{
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0% 9px;
+        background-color: black; 
+        color: white;
+        padding: 04px 9px;     
+        border: solid yellow;
+        border-radius:10px;
+        font-size: 15px;
+        cursor:  pointer;
+
+    }
+    .btn :hover{
+          background-color:fuchsia;
+    }
+
+    .container{
+        border: 5px solid pink;
+        margin: 20px 10px;
+        padding: 10px 2px;
+        margin-left:  55rem;
+        border-radius:48px 35px;
+       border size-adjust: 15px 5px;
+        /* margin-block-start: 50px; */
+        
+    } 
+
+    .form.group input{
+      text-align: center;
+      display:auto;
+      width: 0px;
+      padding: 0px;
+      font-family: 20px;
+      border-radius: 1px solid black;
+
+    }
+  
+  
+    .imgItm{
+    width: 20%;
+    height: 329PX;
+    }
+</style>
+<header class="header">
+    <!--  Left box for logo -->
+   <div class="left">
+       <img src="img/logo.jpg" alt="">
+       <div>  Vicky Shakti</div>     
+        </div>
+    <!-- Mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li> <a href="#"class= "active"> Home </a></li>
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Fitness</a></li>
+            <li> <a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Right box For Buttons-->
+    <div class="right">
+        <button class="btn"> Call Us Now </button>
+        <button class="btn"> Whatsapp Us Now </button>
+    </div>
+</header>
+
+<body class="bg"><br><br>
+ <form >
+     <div style="text-align: center;margin-top: 10px;">
+        <a href="https://www.linkedin.com/in/praveen-kumar-5023a321b/"><img class="imgItm"src="img/1.jpg" alt="img"></a>
+        <img class="imgItm"src="img/2.jpg" alt="img">
+        <img class="imgItm"src="img/01.jpg" alt="img">
+     </div>
+ </form>   
+ <div class="container">
+
+   <h1> Join The Best Gym In Bhopal Now!</h1>
+   <form accept="noaction.php">
+    <div class="form-group">
+        <label for="name" class="nameInput">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    </div>
+    <div class="form-group">
+        <label for="email" class="emailInput">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone" >Phone Number: </label>
+        <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone" required>
+    </div>
+    <!-- <div class="form-group">
+        <label for="feedback">Feedback: </label>
+        <textarea name="feedback" id="message" cols="30" rows="10" required></textarea>
+    </div> -->
+    <div class="form-group">
+        <input id="id9" type="submit" name="submit" class="sbmtbtn" value="Submit">
+    </div>
+   </form>   
+</body>
+</html>
